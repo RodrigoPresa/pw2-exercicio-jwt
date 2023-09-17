@@ -23,6 +23,8 @@ import org.eclipse.microprofile.jwt.Claim;
 import org.eclipse.microprofile.jwt.Claims;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
+import io.quarkus.security.ForbiddenException;
+
 @Path("/first")
 public class First {
 

@@ -44,10 +44,10 @@ public class GenerateJWT {
          * os usuários antes de criar um token.
          */
         return Jwt.issuer("https://localhost:8443")
-            .upn("rodrigo@rpmhub.dev")
+            .upn("teste@teste.com")
             .groups(new HashSet<>(Arrays.asList("User", "Admin")))
-            .claim(Claims.full_name, "Rodrigo Prestes Machado")
-            .claim(Claims.email, "rodrigo@rpmub.dev")
+            .claim(Claims.full_name, "Teste")
+            .claim(Claims.email, "teste@teste.com")
             .innerSign()
             .encrypt();
     }
